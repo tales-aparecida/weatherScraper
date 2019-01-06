@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Estações Meteorológicas - CGE</title>
+
+
+
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/yui/3.4.1/cssreset/reset-min.css" type="text/css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/yui/3.4.1/cssfonts/fonts-min.css" type="text/css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/yui/3.4.1/cssgrids/cssgrids-min.css" type="text/css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/yui/3.4.1/cssbase/base-min.css" type="text/css" rel="stylesheet"/>
+<link rel="stylesheet" href="css/global.css" type="text/css"/>
+<link rel="icon" type="image/png" href="favicon/favicon-16x16.png"/>
+<link rel="stylesheet" href="https://use.typekit.net/rzd2bbz.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/yui/3.4.1/yui/yui-min.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+<script src="js/nav-bar.js"></script>
+
+
+
+
+	<style>
+	body {
+		background:url(images/lay/NB_noite_bg.png) repeat-x top;
+	}
+	.condTempo {
+		background:url(images/lay/NB_noite.png) no-repeat top;
+	}
+	</style>
+
+
+<script type="text/javascript" src="js/estacoes.js"></script>
+<style>
+.ln-vert-escura {
+	height:1200px;
+}
+</style>
+</head>
+<body>
+
+
+<div id="doc">
+	<div id="hd">
+		
+
+<div id="topo-cidade-sp" class="condTempo">
+	<div id="topo-prefeitura-sp">
+		<a href="http://www.capital.sp.gov.br/" target="_blank"><div id="logo-prefeitura-sp"></div></a>
+	</div>
+	<a href="/"><div id="logo_cge"></div></a>
+</div>
+
+		
+
+<div class="yui-skin-nav-bar" id="wrap-nav-bar">
+	<div id="nav-bar" class="yui3-menu yui3-menu-horizontal yui3-menubuttonnav yui3-loading">
+		<div class="yui3-menu-content">
+			<ul class="first-of-type topicos">
+				<li class="yui3-menuitem topico"><a class="yui3-menuitem-content" href="index.jsp">Home</a></li>
+				<li class="yui3-menuitem topico"><a class="yui3-menuitem-content" href="noticias.jsp">Notícias</a></li>
+				<li class="topico">
+					<span class="yui3-menu-label">
+						<a href="#"></a>
+						<a href="#tempo-options" class="yui3-menu-toggle">Tempo</a>
+					</span>
+					<div class="yui3-menu" id="tempo-options">
+						<div class="yui3-menu-content">
+							<ul class="first-of-type">
+								<li class="yui3-menuitem"><a class="yui3-menuitem-content" href="estacoes-meteorologicas.jsp">Estações Meteorológicas</a></li>
+								<li class="yui3-menuitem"><a class="yui3-menuitem-content" href="/cgesp/satellite.jpg" target="_blank">Imagem de Satélite</a></li>
+								<li class="yui3-menuitem"><a class="yui3-menuitem-content" href="previsao_estendida.jsp">Previsão Estendida</a></li>
+							</ul>
+						</div>
+					</div>
+				</li>
+
+				<li class="yui3-menuitem topico">
+					<span class="yui3-menu-label">
+						<a href="#"></a>
+						<a href="#alagamentos-options" class="yui3-menu-toggle">Alagamentos</a>
+					</span>
+					<div class="yui3-menu" id="alagamentos-options">
+						<div class="yui3-menu-content">
+							<ul>
+								<li class="yui3-menuitem"><a class="yui3-menuitem-content" href="alagamentos.jsp">Ver alagamentos</a></li>
+
+							</ul>
+						</div>
+					</div>
+				</li>
+
+
+				<li class="yui3-menuitem topico">
+					<span class="yui3-menu-label">
+						<a href="#"></a>
+						<a href="#o-cge-options" class="yui3-menu-toggle">Quem Somos</a>
+					</span>
+					<div class="yui3-menu" id="o-cge-options">
+						<div class="yui3-menu-content">
+							<ul class="first-of-type">
+								<li class="yui3-menuitem"><a class="yui3-menuitem-content" href="quem-somos.jsp">Quem Somos</a></li>
+								<li class="yui3-menuitem"><a class="yui3-menuitem-content" href="monitoramento.jsp">Monitoramento</a></li>
+								<li class="yui3-menuitem"><a class="yui3-menuitem-content" href="operacao-chuvas-de-verao.jsp">Operação Verão</a></li>
+								<li class="yui3-menuitem"><a class="yui3-menuitem-content" href="umidade-relativa-do-ar.jsp">Umidade do Ar</a></li>
+								<li class="yui3-menuitem"><a class="yui3-menuitem-content" href="baixas-temperaturas.jsp">Baixas Temperaturas</a></li>
+								<li class="yui3-menuitem"><a class="yui3-menuitem-content" href="fontes-de-informacao.jsp">Fontes de Informação</a></li>
+							</ul>
+						</div>
+					</div>
+				</li>
+				<li class="yui3-menuitem topico">
+					<a class="yui3-menuitem-content" href="dicas.jsp">Dicas</a>
+				</li>
+				<li class="yui3-menuitem topico">
+					<a class="yui3-menuitem-content" href="sala-de-imprensa.jsp">Sala de Imprensa</a>
+				</li>
+				<li class="yui3-menuitem topico">
+					<a class="yui3-menuitem-content" href="contato.jsp">Contato</a>
+				</li>
+				<li class="yui3-menuitem topico">
+					<a class="yui3-menuitem-content" href="https://www.facebook.com/CGESAOPAULO/" target="_blank">
+						<i class="fab fa-facebook-square" style="font-size:21px;color:white;"></i>
+					</a>
+				</li>
+				<li class="yui3-menuitem topico">
+					<a class="yui3-menuitem-content" href="https://twitter.com/cge_sp" target="_blank">
+						<i class="fab fa-twitter-square" style="font-size:21px;color:white;"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+	</div>
+	<div class="yui3-g" id="bd">
+		<div class="titulo-bd">Estações Meteorológicas
+		<hr/>
+		</div>
+		<div class="yui3-u col-estacoes" id="col-estacoes">
+	        <div class="content">
+	        	<div class="lista-estacoes arial-data">
+
+		        	<ul class="arial-data" id="lista-estacoes">
+			        	
+			        		
+			        		<li class="selecionado">
+			        			<a href="estacao.jsp?POSTO=1000887" target="frm-estacoes">Penha</a>
+			        		</li>
+			        	
+			        		
+			        		<li >
+			        			<a href="estacao.jsp?POSTO=504" target="frm-estacoes">Perus</a>
+			        		</li>
+			        	
+			        		
+			        		<li >
+			        			<a href="estacao.jsp?POSTO=515" target="frm-estacoes">Pirituba</a>
+			        		</li>
+			        	
+			        		
+			        		<li >
+			        			<a href="estacao.jsp?POSTO=509" target="frm-estacoes">Freguesia do Ó</a>
+			        		</li>
+			        	
+			        		
+			        		<li >
+			        			<a href="estacao.jsp?POSTO=510" target="frm-estacoes">Santana/Tucuruvi</a>
+			        		</li>
+			        	
+			        		
+			        		<li >
+			        			<a href="estacao.jsp?POSTO=1000944" target="frm-estacoes">Tremembé</a>
+			        		</li>
+			        	
+			        		
+			        		<li >
+			        			<a href="estacao.jsp?POSTO=1000862" target="frm-estacoes">São Miguel Paulista</a>
+			        		</li>
+			        	
+			        		
+			        		<li >
+			        			<a href="estacao.jsp?POSTO=1000882" target="frm-estacoes">Itaim Paulista</a>
+			        		</li>
+			        	
+			        		
+			        		<li >
+			        			<a href="estacao.jsp?POSTO=1000844" target="frm-estacoes">São Mateus</a>
+			        		</li>
+			        	
+			        		
+			        		<li >
+			        			<a href="estacao.jsp?POSTO=503" target="frm-estacoes">Sé - CGE</a>
+			        		</li>
+			        	
+			        		
+			        		<li >
+			        			<a href="estacao.jsp?POSTO=1000842" target="frm-estacoes">Butantã</a>
+			        		</li>
+			        	
+			        		
+			        		<li >
+			        			<a href="estacao.jsp?POSTO=1000840" target="frm-estacoes">Ipiranga</a>
+			        		</li>
+			        	
+			        		
+			        		<li >
+			        			<a href="estacao.jsp?POSTO=1000852" target="frm-estacoes">Santo Amaro</a>
+			        		</li>
+			        	
+			        		
+			        		<li >
+			        			<a href="estacao.jsp?POSTO=1000850" target="frm-estacoes">M Boi Mirim</a>
+			        		</li>
+			        	
+			        		
+			        		<li >
+			        			<a href="estacao.jsp?POSTO=592" target="frm-estacoes">Cidade Ademar</a>
+			        		</li>
+			        	
+			        		
+			        		<li >
+			        			<a href="estacao.jsp?POSTO=507" target="frm-estacoes">Barragem Parelheiros</a>
+			        		</li>
+			        	
+			        		
+			        		<li >
+			        			<a href="estacao.jsp?POSTO=1000300" target="frm-estacoes">Marsilac</a>
+			        		</li>
+			        	
+			        		
+			        		<li >
+			        			<a href="estacao.jsp?POSTO=1000848" target="frm-estacoes">Lapa</a>
+			        		</li>
+			        	
+			        		
+			        		<li >
+			        			<a href="estacao.jsp?POSTO=1000854" target="frm-estacoes">Campo Limpo</a>
+			        		</li>
+			        	
+			        		
+			        		<li >
+			        			<a href="estacao.jsp?POSTO=1000857" target="frm-estacoes">Capela do Socorro</a>
+			        		</li>
+			        	
+			        		
+			        		<li >
+			        			<a href="estacao.jsp?POSTO=1000859" target="frm-estacoes">Vila Formosa</a>
+			        		</li>
+			        	
+			        		
+			        		<li >
+			        			<a href="estacao.jsp?POSTO=1000860" target="frm-estacoes">Móoca</a>
+			        		</li>
+			        	
+			        		
+			        		<li >
+			        			<a href="estacao.jsp?POSTO=1000864" target="frm-estacoes">Itaquera</a>
+			        		</li>
+			        	
+			        		
+			        		<li >
+			        			<a href="estacao.jsp?POSTO=524" target="frm-estacoes">Vila Prudente</a>
+			        		</li>
+			        	
+			        		
+			        		<li >
+			        			<a href="estacao.jsp?POSTO=540" target="frm-estacoes">Vila Maria / Guilherme</a>
+			        		</li>
+			        	
+			        		
+			        		<li >
+			        			<a href="estacao.jsp?POSTO=495" target="frm-estacoes">Vila Mariana</a>
+			        		</li>
+			        	
+			        		
+			        		<li >
+			        			<a href="estacao.jsp?POSTO=400" target="frm-estacoes">Riacho Grande</a>
+			        		</li>
+			        	
+			        		
+			        		<li >
+			        			<a href="estacao.jsp?POSTO=1000876" target="frm-estacoes">Mauá - Paço Municipal</a>
+			        		</li>
+			        	
+			        		
+			        		<li >
+			        			<a href="estacao.jsp?POSTO=1000880" target="frm-estacoes">Santana do Parnaíba</a>
+			        		</li>
+			        	
+			        		
+			        		<li >
+			        			<a href="estacao.jsp?POSTO=634" target="frm-estacoes">Jabaquara</a>
+			        		</li>
+			        	
+			        		
+			        		<li >
+			        			<a href="estacao.jsp?POSTO=635" target="frm-estacoes">Pinheiros</a>
+			        		</li>
+			        	
+		        	</ul>
+
+	        	</div>
+	        </div>
+	    </div>
+	    <div class="yui3-u ln-vert-escura"></div>
+	    <div class="yui3-u col-dados-estacao">
+	        <div class="content">
+	        	<iframe src="estacao.jsp?POSTO=1000887" id="frm-estacoes" name="frm-estacoes"></iframe>
+	        </div>
+	    </div>
+	</div>
+</div>
+<div id="ft">
+
+<div id="max-width-ft">
+	<div class="yui3-g">
+			<div class="yui3-u-1-4">
+
+				<ul>
+					<li class="tit">Alagamentos</li>
+
+					<li>
+						<a href="alagamentos.jsp">Histórico</a>
+					</li>
+
+				</ul>
+
+				<ul>
+					<li></li>
+					<li class="tit">
+						<a href="dicas.jsp">Dicas</a>
+					</li>
+					<li class="tit">
+						<a href="sala-de-imprensa.jsp">Sala de Imprensa</a>
+					</li>
+				</ul>
+			</div>
+			<div class="yui3-u-1-4">
+				<ul>
+					<li class="tit">Tempo</li>
+					<li>
+						<a href="estacoes-meteorologicas.jsp">Estações Meteorológicas</a>
+					</li>
+					<li>
+						<a href="satelite.jsp">Imagem de Satélite</a>
+					</li>
+					<li>
+						<a href="previsao_estendida.jsp">Previsão Estendida</a>
+					</li>
+				</ul>
+			</div>
+			<div class="yui3-u-1-4">
+				<ul>
+					<li class="tit">O CGE</li>
+					<li><a href="quem-somos.jsp">Quem Somos</a></li>
+					<li><a href="monitoramento.jsp">Monitoramento</a></li>
+					<li><a href="operacao-chuvas-de-verao.jsp">Operação Verão</a></li>
+					<li><a href="umidade-relativa-do-ar.jsp">Umidade do Ar</a></li>
+					<li><a href="baixas-temperaturas.jsp">Baixas Temperaturas</a></li>
+					<li><a href="fontes-de-informacao.jsp">Fontes de Informação</a></li>
+				</ul>
+			</div>
+			<div class="yui3-u-1-4">
+				<ul>
+					<li class="tit">
+						<a href="contato.jsp">Contato</a>
+					</li>
+					<li></li>
+					<li>
+						<a href="feed_rss.jsp" target="_blank"><i class="fas fa-rss-square" style="font-size:21px;color:white;"></i></a>
+						<a href="https://www.facebook.com/pages/CGE/189602861065357" target="_blank"><i class="fab fa-facebook-square" style="font-size:21px;color:white;"></i></a>
+						<a href="https://twitter.com/cge_sp" target="_blank"><i class="fab fa-twitter-square" style="font-size:21px;color:white;"></i></a>
+					</li>
+					<li></li>
+					<li class="fone">24hrs - (11) 3396-6739</li>
+					<li></li>
+					<li><a href="https://www.fcth.br" target="_blank"><img src="images/lay/logo_fcth.png"/></a></li>
+				</ul>
+			</div>
+	</div>
+</div>
+<script src="https://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+ _gaq.push(['_setAccount', 'UA-16238277-3']);
+  _gaq.push(['_trackPageview']);
+
+   (function() {
+      var ga = document.createElement('script');
+      ga.type ='text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(ga, s);
+    })();
+
+</script>
+</div>
+
+</body>
+</html>

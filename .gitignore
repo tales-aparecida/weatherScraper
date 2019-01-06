@@ -1,0 +1,7 @@
+# Virtual env
+venv/
+
+# Visual Studio Code
+.vscode
+
+*.pyc

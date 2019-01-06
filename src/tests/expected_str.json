@@ -1,0 +1,229 @@
+{
+  "Penha": [
+    {
+      "humidity": 77.56,
+      "pressure": 925.48,
+      "rain": 0.0,
+      "temperature": 24.43,
+      "timestamp": 1545102000,
+      "wind_direction": 284.0,
+      "wind_speed": 0.56
+    },
+    {
+      "humidity": 75.85,
+      "pressure": 926.25,
+      "rain": 0.0,
+      "temperature": 24.25,
+      "timestamp": 1545098400,
+      "wind_direction": 333.0,
+      "wind_speed": 0.0
+    },
+    {
+      "humidity": 75.91,
+      "pressure": 926.82,
+      "rain": 0.0,
+      "temperature": 23.88,
+      "timestamp": 1545094800,
+      "wind_direction": 51.0,
+      "wind_speed": 1.13
+    },
+    {
+      "humidity": 62.17,
+      "pressure": 924.89,
+      "rain": 0.0,
+      "temperature": 28.28,
+      "timestamp": 1545091200,
+      "wind_direction": 54.0,
+      "wind_speed": 0.0
+    },
+    {
+      "humidity": 58.27,
+      "pressure": 926.01,
+      "rain": 0.0,
+      "temperature": 29.08,
+      "timestamp": 1545087600,
+      "wind_direction": 190.0,
+      "wind_speed": 0.56
+    },
+    {
+      "humidity": 54.64,
+      "pressure": 925.27,
+      "rain": 0.0,
+      "temperature": 30.06,
+      "timestamp": 1545084000,
+      "wind_direction": 176.0,
+      "wind_speed": 0.56
+    },
+    {
+      "humidity": 40.93,
+      "pressure": 923.86,
+      "rain": 0.0,
+      "temperature": 33.27,
+      "timestamp": 1545080400,
+      "wind_direction": 269.0,
+      "wind_speed": 0.56
+    },
+    {
+      "humidity": 37.99,
+      "pressure": 925.15,
+      "rain": 0.0,
+      "temperature": 33.56,
+      "timestamp": 1545076800,
+      "wind_direction": 273.0,
+      "wind_speed": 0.75
+    },
+    {
+      "humidity": 39.32,
+      "pressure": 925.55,
+      "rain": 0.0,
+      "temperature": 34.68,
+      "timestamp": 1545073200,
+      "wind_direction": 246.0,
+      "wind_speed": 0.94
+    },
+    {
+      "humidity": 37.32,
+      "pressure": 925.91,
+      "rain": 0.0,
+      "temperature": 33.74,
+      "timestamp": 1545069600,
+      "wind_direction": 332.0,
+      "wind_speed": 0.56
+    },
+    {
+      "humidity": 38.44,
+      "pressure": 926.42,
+      "rain": 0.0,
+      "temperature": 34.26,
+      "timestamp": 1545066000,
+      "wind_direction": 320.0,
+      "wind_speed": 0.56
+    },
+    {
+      "humidity": 41.4,
+      "pressure": 926.46,
+      "rain": 0.0,
+      "temperature": 33.84,
+      "timestamp": 1545062400,
+      "wind_direction": 266.0,
+      "wind_speed": 0.75
+    },
+    {
+      "humidity": 44.86,
+      "pressure": 927.67,
+      "rain": 0.0,
+      "temperature": 33.12,
+      "timestamp": 1545058800,
+      "wind_direction": 44.0,
+      "wind_speed": 0.75
+    },
+    {
+      "humidity": 53.14,
+      "pressure": 928.18,
+      "rain": 0.0,
+      "temperature": 31.53,
+      "timestamp": 1545055200,
+      "wind_direction": 20.0,
+      "wind_speed": 0.19
+    },
+    {
+      "humidity": 57.09,
+      "pressure": 929.07,
+      "rain": 0.0,
+      "temperature": 30.03,
+      "timestamp": 1545051600,
+      "wind_direction": 69.0,
+      "wind_speed": 0.38
+    },
+    {
+      "humidity": 63.44,
+      "pressure": 928.73,
+      "rain": 0.0,
+      "temperature": 28.99,
+      "timestamp": 1545048000,
+      "wind_direction": 316.0,
+      "wind_speed": 0.0
+    },
+    {
+      "humidity": 69.97,
+      "pressure": 927.31,
+      "rain": 0.0,
+      "temperature": 27.04,
+      "timestamp": 1545044400,
+      "wind_direction": 23.0,
+      "wind_speed": 0.19
+    },
+    {
+      "humidity": 87.5,
+      "pressure": 925.72,
+      "rain": 0.5,
+      "temperature": 22.8,
+      "timestamp": 1545040800,
+      "wind_direction": 64.0,
+      "wind_speed": 0.0
+    },
+    {
+      "humidity": 92.85,
+      "pressure": 925.57,
+      "rain": 0.5,
+      "temperature": 21.69,
+      "timestamp": 1545037200,
+      "wind_direction": 52.0,
+      "wind_speed": 0.0
+    },
+    {
+      "humidity": 94.99,
+      "pressure": 925.34,
+      "rain": 0.5,
+      "temperature": 21.48,
+      "timestamp": 1545033600,
+      "wind_direction": 96.0,
+      "wind_speed": 0.0
+    },
+    {
+      "humidity": 92.8,
+      "pressure": 924.13,
+      "rain": 0.5,
+      "temperature": 22.06,
+      "timestamp": 1545030000,
+      "wind_direction": 16.0,
+      "wind_speed": 0.0
+    },
+    {
+      "humidity": 94.74,
+      "pressure": 925.72,
+      "rain": 0.5,
+      "temperature": 21.45,
+      "timestamp": 1545026400,
+      "wind_direction": 210.0,
+      "wind_speed": 0.56
+    },
+    {
+      "humidity": 93.8,
+      "pressure": 925.0,
+      "rain": 0.5,
+      "temperature": 21.58,
+      "timestamp": 1545022800,
+      "wind_direction": 208.0,
+      "wind_speed": 0.0
+    },
+    {
+      "humidity": 91.88,
+      "pressure": 925.74,
+      "rain": 0.5,
+      "temperature": 21.93,
+      "timestamp": 1545019200,
+      "wind_direction": 209.0,
+      "wind_speed": 0.0
+    },
+    {
+      "humidity": 93.05,
+      "pressure": 926.5,
+      "rain": 0.5,
+      "temperature": 21.89,
+      "timestamp": 1545015600,
+      "wind_direction": 209.0,
+      "wind_speed": 0.0
+    }
+  ]
+}

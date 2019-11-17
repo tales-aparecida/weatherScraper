@@ -87,32 +87,9 @@ A saída de erros/secundária contém o log da execução, ela é automaticament
 - requests: lib para realizar HTTP requests
 
 ### Dependências sugeridas para devs
-- pylint: Linter para padronizar código e encontrar erros
+- pylint: Linter capaz de encontrar erros e padronizar estilo de código
 - autopep8: Auto formatador de código
-- pytest: Testador
-
-## Perguntas
-
-**1-** O que você faria caso quisesse obter essas informações de forma recorrente, ou seja, todo dia?
-
-Poderíamos usar uma ferramenta que monitora mudanças de páginas, como [Visualping](https://visualping.io/), que adiciona complexidade no fluxo, e talvez a dependência de terceiros, mas evita executar todo o script para descobrir que nada mudou. Alternativamente pode-se simplesmente executar periodicamente, localmente ou em algum servidor, o script criado, com algo simples como o `crontab`, por exemplo, opção que eu recomendaria, visto que os dados tem mudanças previsíveis, de hora em hora, renovando completamente a cada 24 horas, com o ponto negativo de ser mais custoso deixar este fluxo com dados em tempo real.
-
-**2-** Como você validaria se as respostas obtidas do crawler estão corretas ou não?
-
-Primeiramente, como é feito, avaliar se valores encontrados estão dentro de um intervalo válido, no caso, por serem numéricos. Poderia-se, também remontar a tabela com os dados serializados e fazer uma comparação de string, semelhante ao que foi feito com as saídas esperadas nos testes, entretanto, sem a avaliação de um humano pode ser difícil ter certeza do resultado, afinal, este tipo de teste parte do princípio que estamos comparando a parte certa do site, neste caso a tabela com `id = #tbDadosTelem`. Alternativamente poderíamos criar uma métrica para ranquear a confiabilidade de cada extração com base na tendência dos valores, onde poderíamos desconfiar de _outliers_ na sequência de medições no tempo; claro que para isso precisaríamos saber o que pode ser considerado um _outlier_ em medições meteorológicas.
-
-_As duas próximas respostas foram respondidas juntamente_
-
-**3-** O que você faria se tivesse mais tempo para resolver o desafio?
-
-**4-** Como você resolveria esse desafio e/ou as perguntas caso tivesse acesso aos recursos da Amazon Web Services, Azure ou Google Cloud?
-
-Respondendo estas duas questões juntamente, poderíamos utilizar estas plataformas _cloud_ para fornecer uma **API**, onde terceiros pudessem fazer diversas _queries_ com filtros e, eventualmente, funções de agregação, assim como os gráficos existentes na página.
-
-A tarefa de _scraping_, em si, não tem muito a ganhar com estas ferramentas; dado que é uma tarefa relativamente simples, não vale a pena lidar com os custos exigidos de servidores remotos. Apesar disso é possível usá-los para fazer as extrações periódicas.
-
-Outra possibilidade de melhora é paralelizar as requisições, que agilizaria o processamento sacrificando apenas a banda da rede, que não é tão afetada, se considerarmos que temos apenas 31 estações meteorológicas.
-
+- pytest: Executa testes unitários
 
 ### Explicação da execução
 
